@@ -73,6 +73,7 @@
     <artifactId>adf-parent</artifactId>
     <version>12.1.3-0-0</version>
     <relativePath></relativePath>
+    
   </parent>
   <modules>
     <module>Model</module>
@@ -92,4 +93,16 @@
       <type>war</type>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <name>OracleMaven</name>
+      <id>maven.oracle.com</id>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <name>OracleMaven</name>
+      <id>maven.oracle.com</id>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
