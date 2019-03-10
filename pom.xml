@@ -94,17 +94,22 @@
     </dependency>
   </dependencies>
   <repositories>
-    <repository>
-      <name>OracleMaven</name>
-      <id>maven.oracle.com</id>
-      <url>https://maven.oracle.com</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <name>OracleMaven</name>
-      <id>maven.oracle.com</id>
-      <url>https://maven.oracle.com</url>
-    </pluginRepository>
-  </pluginRepositories>
+  <repository>
+    <id>maven.oracle.com</id>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+    <url>https://maven.oracle.com</url>
+    <layout>default</layout>
+  </repository>
+</repositories>
+<pluginRepositories>
+  <pluginRepository>
+    <id>maven.oracle.com</id>
+    <url>https://maven.oracle.com</url>
+  </pluginRepository>
+</pluginRepositories>
 </project>
